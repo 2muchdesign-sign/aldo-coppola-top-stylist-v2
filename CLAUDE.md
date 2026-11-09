@@ -34,6 +34,12 @@
 - FAQ про базу: приводить не нужно, но для гостей мастера готовы создать особые условия и обсуждать цены.
 - Повторы смыслов между блоками допустимы: блоки вытекают один из другого.
 
+## Факты из брендбука (Книжка AC-3.0, «07 Бренд»)
+- В России с 1996 года (не «около 20 лет»). Модные дома: Giorgio Armani, Valentino, Gianfranco Ferré, Missoni, Versace, Fendi, Prada, Roberto Cavalli. Фотографы: Toscani, Ferri, Vallhonrat, Newton, Horst P. Horst, Feurer, Bailey, Lategan, Barbieri. Журналы: Vogue Italia, Elle, Marie Claire, Amica, Grazia.
+- Live-Show дважды в год в Милане; интерьеры с Филиппом Старком и Каримом Рашидом; параллельный сервис — первые в России; есть эстетическая и врачебная косметология.
+- Арт-директора: Джампаоло Марини (BoscoVesna), Альберто Санвидо (Жуковка), Джузеппе Кастальди (Времена года), Робертино Роди (Юнимолл).
+- Показы в России (от заказчика): Chanel, Chapurin, Alena Akhmadullina, Yanina, YANA. Глянец РФ: Forbes, РБК Стиль, The Symbol, The Blueprint, Москвичка.
+
 ## Структура страницы (по факту, index.html)
 Секции по порядку (id): hero, brand, creative, shows, personal, clients, team, income, schedule, locations, space (комфорт мастера, вкл. бывший service), guests, growth, stories, history, academy, join (форма заявки), faq; затем footer.
 Фото салонов: ключи MEDIA `salon-barvikha`, `salon-zhukovka`, `salon-unimall`, `salon-vremena`, `salon-lotte`, `salon-novinsky`, `salon-vesna` — по 3 фото, первое крупное.

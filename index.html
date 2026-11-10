@@ -922,6 +922,23 @@ body.draft .tbd{background:rgba(255,196,0,.3);box-shadow:0 0 0 2px rgba(255,196,
     </div>
     <div class="carousel wide full-bleed rv" data-key="stories" data-ratio="16/10"
       data-hints="Видео-интервью: мастер 1, «почему я перешла»|Видео-интервью: мастер 2, «15 лет в Aldo Coppola»|Фото: мастер 3 на показе|Видео: день из жизни топ-стилиста"></div>
+    <div class="stories rv">
+      <article class="story">
+        <div class="who"><div class="av">А</div><div><b>Анна К.</b><span>Топ-стилист · Времена года · с 2022</span></div></div>
+        <blockquote>«Перешла из частной студии. Через три месяца моя запись была заполнена на две недели вперёд, а доход вырос».</blockquote>
+        <div class="path">Путь: мастер в салоне</div>
+      </article>
+      <article class="story">
+        <div class="who"><div class="av">М</div><div><b>Марина С.</b><span>Колорист · Жуковка · с 2008</span></div></div>
+        <blockquote>«Работаю здесь больше пятнадцати лет. Мои клиенты ходят ко мне годами, и меня всё устраивает».</blockquote>
+        <div class="path">Путь: мастер в салоне</div>
+      </article>
+      <article class="story">
+        <div class="who"><div class="av">Д</div><div><b>Дмитрий Л.</b><span>Топ-стилист · с 2019</span></div></div>
+        <blockquote>«Пришёл с именем, а здесь получил показы, съёмки и поездки в Милан».</blockquote>
+        <div class="path">Путь: мастер на подиуме</div>
+      </article>
+    </div>
   </div>
 </section>
 
@@ -1103,29 +1120,50 @@ const MEDIA = {
   ],
   // Салоны: по 3 фото на салон (1-е — крупное). Ключи — data-key у блоков .shots
   'salon-barvikha': [
-    { src: 'media/salons/barvikha-1.jpg', caption: 'Барвиха' },
-    { src: 'media/salons/barvikha-2.jpg', caption: 'Рабочее место мастера' },
-    { src: 'media/salons/barvikha-3.jpg', caption: 'Барвиха' }
+    { src: 'media/salons/barvikha-1.jpg', caption: 'Барвиха: зал' },
+    { src: 'media/salons/barvikha-2.jpg', caption: 'Барвиха Luxury Village' },
+    { src: 'media/salons/barvikha-3.jpg', caption: 'Ресепшн' }
   ],
-  'salon-zhukovka': [],
-  'salon-unimall': [],
+  'salon-zhukovka': [
+    { src: 'media/salons/zhukovka-1.jpg', caption: 'Жуковка: зал' },
+    { src: 'media/salons/zhukovka-2.jpg', caption: 'Вход в салон' },
+    { src: 'media/salons/zhukovka-3.jpg', caption: 'Лаунж и кафе для клиентов' }
+  ],
+  'salon-unimall': [
+    { src: 'media/salons/unimall-1.jpg', caption: '«Юнимолл»: ресепшн' },
+    { src: 'media/salons/unimall-2.jpg', caption: 'Зал' },
+    { src: 'media/salons/unimall-3.jpg', caption: 'Мойки' }
+  ],
   'salon-vremena': [
-    { src: 'media/salons/vremena-1.jpg', caption: '«Времена года»' },
-    { src: 'media/salons/vremena-2.jpg', caption: 'Зал салона' },
-    { src: 'media/salons/vremena-3.jpg', caption: '«Времена года»' }
+    { src: 'media/salons/vremena-1.jpg', caption: '«Времена года»: зал' },
+    { src: 'media/salons/vremena-2.jpg', caption: 'Вход в салон' },
+    { src: 'media/salons/vremena-3.jpg', caption: 'Рабочие места мастеров' }
   ],
-  'salon-lotte': [],
+  'salon-lotte': [
+    { src: 'media/salons/lotte-1.jpg', caption: 'Lotte Hotel: зал' },
+    { src: 'media/salons/lotte-2.jpg', caption: 'Вход в салон' },
+    { src: 'media/salons/lotte-3.jpg', caption: 'Рабочее место мастера' }
+  ],
   'salon-novinsky': [
-    { src: 'media/salons/novinsky-1.jpg', caption: 'Новинский' },
-    { src: 'media/salons/novinsky-2.jpg', caption: 'Мойки' },
+    { src: 'media/salons/novinsky-1.jpg', caption: 'Новинский: зал' },
+    { src: 'media/salons/novinsky-2.jpg', caption: 'Ресепшн' },
     { src: 'media/salons/novinsky-3.jpg', caption: 'Рабочее место мастера' }
   ],
   'salon-vesna': [],
   space: [
+    { src: 'media/space/workplace-vremena.jpg', caption: 'Рабочие места, «Времена года»' },
+    { src: 'media/space/workplace-zhukovka.jpg', caption: 'Зал, Жуковка' },
+    { src: 'media/space/workplace-unimall.jpg', caption: 'Рабочее место, «Юнимолл»' },
+    { src: 'media/space/wash-novinsky.jpg', caption: 'Мойка, Новинский' },
+    { src: 'media/space/wash-barvikha.jpg', caption: 'Мойки, Барвиха' },
     { src: 'media/space/hair-care.jpg', caption: 'Авторские программы ухода Aldo Coppola' }
   ],
   guests: [
-    { src: 'media/guests/parallel-service.jpg', caption: 'Параллельный сервис' }
+    { src: 'media/guests/parallel-service.jpg', caption: 'Параллельный сервис' },
+    { src: 'media/guests/cafe-zhukovka.jpg', caption: 'Кафе для клиентов, Жуковка' },
+    { src: 'media/guests/lounge-barvikha.jpg', caption: 'Зона ожидания, Барвиха' },
+    { src: 'media/guests/treat-novinsky.jpg', caption: 'Угощение для клиентов, Новинский' },
+    { src: 'media/guests/vip-vremena.jpg', caption: 'Кабинет, «Времена года»' }
   ],
   creative: [
     { video: 'media/creative/barvikha-art.mp4', poster: 'media/creative/barvikha-art.jpg', caption: 'Арт-съёмка Aldo Coppola, арт-директор Робертино Роди, фото Альберт Плехов' },

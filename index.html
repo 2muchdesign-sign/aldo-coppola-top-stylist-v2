@@ -129,6 +129,7 @@ h3{font-size:clamp(24px,2.4vw,30px)}
 .carousel.wide{--ratio:16/10;--per:2.15}
 .carousel.tri{--ratio:4/5;--per:3.2}
 .carousel.story{--ratio:9/16;--per:2}
+.carousel.stories-iv{max-width:640px;margin-top:36px}
 @media (max-width:900px){.carousel.wide{--per:1.15}.carousel.tri{--per:1.3}.carousel{--per:1.08}.carousel.story{--per:1.6}}
 .full-bleed{margin-right:calc(-1 * var(--gutter))}
 .full-bleed .cnav{padding-right:var(--gutter)}
@@ -843,10 +844,10 @@ body.draft .tbd{background:rgba(255,196,0,.3);box-shadow:0 0 0 2px rgba(255,196,
         <p class="eyebrow">13 · Истории</p>
         <h2>Они пришли <em>уже звёздами</em></h2>
       </div>
-      <p class="lead">Мастера, которые пришли в Aldo Coppola с именем и опытом, и мастера, которые работают у нас много лет.</p>
+      <p class="lead">Мастера, которые пришли в Aldo Coppola с именем и опытом, и мастера, которые работают у нас много лет. Нажмите на видео, чтобы посмотреть интервью со звуком.</p>
     </div>
-    <div class="carousel wide full-bleed rv" data-key="stories" data-ratio="16/10"
-      data-hints="Видео-интервью: мастер 1, «почему я перешла»|Видео-интервью: мастер 2, «15 лет в Aldo Coppola»|Фото: мастер 3 на показе|Видео: день из жизни топ-стилиста"></div>
+    <div class="carousel story stories-iv rv" data-key="stories" data-ratio="9/16"
+      data-hints="Видео-интервью: топ-стилист|Видео-интервью: топ-визажист"></div>
     <div class="stories rv">
       <article class="story">
         <div class="who"><div class="av">А</div><div><b>Анна К.</b><span>Топ-стилист · ТЦ Времена года · с 2022</span></div></div>
@@ -1161,7 +1162,10 @@ const MEDIA = {
     { src: 'media/growth/live-show-runway.jpg', caption: 'Финальный выход' },
     { src: 'media/growth/teatro-lirico-final.jpg', caption: 'Финал шоу в Teatro Lirico' }
   ],
-  stories: [],
+  stories: [
+    { video: 'media/stories/gennadiy.mp4', poster: 'media/stories/gennadiy.jpg', caption: 'Геннадий · топ-стилист' },
+    { video: 'media/stories/rafael.mp4', poster: 'media/stories/rafael.jpg', caption: 'Рафаэль · топ-визажист' }
+  ],
   history: [
     { src: 'media/history/archive-1.jpg', caption: 'Архив Aldo Coppola' },
     { src: 'media/history/archive-2.jpg', caption: 'Архив Aldo Coppola' },
